@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>TP Toggle</h1>
+      <h2>TP: Utilisation de Toggle</h2>
+      <button id="toggleDiv" onclick="hide()">Cacher</button>
+      <div id="btns" class="btns">
+        <button id="toggleButton">Afficher l'élément</button>
+      </div>
+      <button id="toggleButton2" onclick="toggleElement()">Afficher l'élément</button>
+     
+      <div id="elementToToggle" style="display: none;">Bonjour, je suis visible maintenant !</div>
+
+
+      <h2>Tp indexation des journaux</h2>
+
+      <!-- Formulaire pour ajouter un journal -->
+      <input 
+        type="text" 
+        id="journalInput" 
+        placeholder="Entrez le titre du journal..." 
+      />
+      <button id="addJournalButton">Ajouter le journal</button>
+
+      <!-- Liste des journaux -->
+      <ul id="journalList">
+        <!-- Journaux ajoutés apparaîtront ici -->
+      </ul>
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/add_news.js"></script>
+  </body>
+</html>
